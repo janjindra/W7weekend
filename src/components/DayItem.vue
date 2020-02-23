@@ -20,4 +20,25 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: sans-serif;
+  width: 130px;
+}
+
+li:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
 </style>
