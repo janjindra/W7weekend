@@ -28,8 +28,6 @@ export default {
   },
 
 
-
-
   methods: {
       getCountries: function() {
         const promises = [1105779, 638242, 2487956, 44418, 2122265].map(num => {
@@ -179,6 +177,6 @@ export default {
           }
 
     weather-footer {
-        text-align: center;  
+        text-align: center;
           }
           </style>

@@ -23,7 +23,7 @@ export default {
 
 li {
   float: left;
-  border-right:1px solid #bbb;
+  border-right:1px solid white;
   display: block;
   color: white;
   text-align: center;
