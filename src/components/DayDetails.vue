@@ -4,15 +4,15 @@
 
   <div class="row"><div class="column" style="background-color:lightyellow;">
     <p>⛈ Weather: {{day.weather_state_name}}</p>
-    <p>➖ Min temperature: {{day.min_temp}}°C</p>
-    <p>➕ Max temperature: {{day.max_temp}}°C</p>
+    <p>➖ Min temperature: {{day.min_temp.toFixed(2)}}°C</p>
+    <p>➕ Max temperature: {{day.max_temp.toFixed(2)}}°C</p>
     <p>🧭 Wind direction: {{day.wind_direction_compass}}</p>
   </div>
   <div class="column" style="background-color:lightyellow;">
-    <p>💨 Wind speed: {{day.wind_speed}} mph</p>
-    <p>꩜ Air pressure: {{day.air_pressure}} mbar</p>
+    <p>💨 Wind speed: {{day.wind_speed.toFixed(2)}} mph</p>
+    <p>꩜ Air pressure: {{day.air_pressure.toFixed(1)}} mbar</p>
     <p>💦 Humidity: {{day.humidity}}%</p>
-    <p>🌫 Visibility: {{day.visibility}} miles</p>
+    <p>🌫 Visibility: {{day.visibility.toFixed(2)}} miles</p>
   </div>
 </div>
 
