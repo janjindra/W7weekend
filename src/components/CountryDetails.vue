@@ -49,6 +49,11 @@ export default {
     }
   },
   mounted() {
+
+    eventBus.$on('country-selected', () => {
+      this.selectedDay = null;
+    })
+
     eventBus.$on('day-selected', (day) => {
 
       this.selectedDay = day;

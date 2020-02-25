@@ -63,11 +63,13 @@ export default {
 
     eventBus.$on('country-selected', (country) => {
     this.selectedCountry = country;
+
+    // this.selectedDay = null;
      });
 
-    eventBus.$on('day-selected', (day) => {
-    this.selectedDay = day;
-    })
+    // eventBus.$on('day-selected', (day) => {
+    // // this.selectedDay = day;
+    // })
   },
   // mounted() {
   //

@@ -1,7 +1,6 @@
 <template lang="html">
   <section v-if="day">
   <h3>📆 Date: {{day.applicable_date}}</h3>
-
   <div class="row"><div class="column" style="background-color:lightyellow;">
     <p>⛈ Weather: {{day.weather_state_name}}</p>
     <p>➖ Min temperature: {{day.min_temp.toFixed(2)}}°C</p>

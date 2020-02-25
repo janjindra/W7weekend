@@ -2,7 +2,7 @@
   <div>
 
     <li v-on:click="handleClick" :class="">{{country.title}}
-      <!-- <br><img v-on:click="handleClick" :src="findImg"> -->
+      <!-- <br><img v-on:click="handleClick" :src="findImg()"> -->
     </li>
 
     </div>
@@ -27,18 +27,30 @@ export default {
   },
 
   methods: {
-    handleClick(){
+    handleClick: function(){
       eventBus.$emit('country-selected', this.country);
-    }
-  },
-  computed: {
+    },
+
     findImg: function(){
-      for (let image in this.images) {
+      for (let image of this.images) {
+        // debugger;
         if (image.alt == this.country.title) {
             return image.url
         }
       }
     }
+
+
+  },
+  computed: {
+    // findImg: function(){
+    //   debugger;
+    //   for (let image in this.images) {
+    //     if (image.alt == this.country.title) {
+    //         return image.url
+    //     }
+    //   }
+    // }
   }
 }
 </script>
